@@ -1,0 +1,30 @@
+
+
+FUNCTION palynd (mot:STRING ,droit:STRING ,gauche:STRING ) : STRING
+    VAR
+BEGIN
+      n=mot.length-1;
+      
+        IF (mot.length<= 1) THEN
+            RETURN TRUE
+        ELSE_IF (mot[0]=mot[n]) THEN
+            RETURN palynd(mot[1 ,-1])
+        ELSE
+            RETURN FALSE 
+        END_IF
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
